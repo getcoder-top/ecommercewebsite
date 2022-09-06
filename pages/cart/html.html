@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/projecttest2/pages/main/main.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- amazon title -->
+    <div class="div1">
+        <img src="/projecttest2/amazonlogo_low1.png" alt="amazon">
+        <input type="text" class="searchbox" id="searchbox">
+        <div class="nav">
+            <a href="">Login/Signup</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cartitems">
+            <div class="card">
+                <img class="cartimage" src="/projecttest2/shoes5.jpg" alt="">
+                <div class="description">
+                    <p class="cartitemname font">Item Name</p>
+                    <p class="cartdescription font">Description</p>
+                    <div class="cartquantiy">
+                    <p>Quantity</p><button class="decbutton cartbutton" onclick="decquantity()">-</button><h2 class="quantity">no.</h2><button class="incbutton cartbutton" onclick="incquantity()">+</button>
+                    </div>
+                </div>
+                <div>
+                    <p class="price">$ Price</p>
+                </div>
+            </div>
+        </div>
+        <div class="amount">
+            <div class="amountcard">
+                <p class="totalheading font">Total</p>
+                <div class="amountdetailscard">
+                <div class="amountdetails font">
+                    <p>Amount</p>
+                    <p>tax</p>
+                    <p>convenience fee</p>
+                </div>
+                <div class="pricedetails font">
+                    <p>$ 100</p>
+                    <p>$ 100</p>
+                    <p>$ 100</p>
+                </div>
+                </div>
+                <hr>
+                <p class="totalamount font">$ amount</p>
+                <button class="buynow font button">BUY NOW</button>
+            </div>
+            <div class="pincodecard font">
+                <p>Pincode</p>
+                <p class="pincodebox"><input type="number" class="pincode"><button class="buttonpincode"><img class="imagepincode" src="/projecttest2/pages/imagesearch.png" alt=""></button></p>
+            </div>
+            <p>or</p>
+            <div class="loginbox">
+                <button class="loginboxbutton button">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
